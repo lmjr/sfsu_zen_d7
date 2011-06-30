@@ -111,8 +111,6 @@ regions[sitestripe]     = Sitestripe
 regions[imagestripe]    = Imagestripe
 regions[nav]            = Nav
 regions[sidebar]        = Sidebar
-regions[content_top]    = Content top
-regions[content_bottom] = Content bottom
 regions[footerstripe]   = Footerstripe
 
 

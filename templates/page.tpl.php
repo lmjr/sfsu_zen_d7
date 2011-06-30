@@ -71,16 +71,16 @@
 
   <div id="page"><div id="page-inner">
   
-<?php if ($headerstripe): ?>        
-<?php print $headerstripe; ?>
+<?php if ($page[headerstripe]): ?>        
+<?php print render ($page[headerstripe]); ?>
 <?php endif; ?>
 
-<?php if ($sitestripe): ?>        
-<?php print $sitestripe; ?>
+<?php if ($page[sitestripe]): ?>        
+<?php print render ($page[sitestripe]); ?>
 <?php endif; ?><!-- x site -->
 
-<?php if ($imagestripe): ?>        
-<?php print $imagestripe; ?>
+<?php if ($page[imagestripe]): ?>        
+<?php print render ($page[imagestripe]); ?>
 <?php endif; ?><!-- x image -->
 
 <!-- o content --><div id="contentstripe"><div id="contentbox">
@@ -93,8 +93,8 @@
 </div> <!-- /#content-left -->
 <?php #endif; ?>
 
-          <?php if ($nav): ?>
-            <?php print $nav; ?>
+          <?php if ($page[nav]): ?>
+            <?php print render ($page[nav]); ?>
           <?php endif; ?>
 
           <?php #if ($primary_links): ?>
@@ -125,8 +125,8 @@
 <!-- o sidebar -->
 <div id="sidebar">
 
-<?php if ($sidebar): ?>
-<?php print $sidebar; ?>
+<?php if ($page[sidebar]): ?>
+<?php print render ($page[sidebar]); ?>
 <?php endif; ?>
 
 <?php #if ($secondary_links): ?>
@@ -166,19 +166,19 @@
 </div> <!-- /#content-header -->
 <?php endif; ?>
 
-<?php if ($content_top): ?>
-<div id="content-top">        
-<?php print $content_top; ?>
+<?php if ($page['page_top']): ?>
+<div id="page-top">        
+<?php print render ($page['page_top']); ?>
 </div> <!-- /#content-top -->
 <?php endif; ?>
 
 <div id="content-area">
-<?php print $content; ?>
+<?php print render ($page['content']); ?>
 </div> <!-- /#content-area -->
 
-<?php if ($content_bottom): ?>
+<?php if ($page['page_bottom']): ?>
 <div id="content-bottom">
-<?php print $content_bottom; ?>
+<?php print render ($page['page_bottom']); ?>
 </div> <!-- /#content-bottom -->
 <?php endif; ?>
 
