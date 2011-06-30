@@ -19,11 +19,9 @@ http://www.sfsu.edu/template and to meet California Government Code 11135, imple
 <meta name="viewport" content="width=900" />
 <?php print $head; ?>
 
-<?php if ($sitetitle): ?>        
-<?php print $sitetitle; ?>
+<?php if ($site_name): ?>        
+<?php print $site_name; ?>
 <?php endif; ?>
-
-<script type="text/javascript" src="<?php print base_path() . path_to_theme() ?>/includes/StrongPasswordGenerator.js" ></script>
 
 <?php print $styles; ?>
 
