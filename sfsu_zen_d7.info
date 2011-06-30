@@ -49,6 +49,15 @@ stylesheets[print][]      = css/print.css
 stylesheets[all][]        = includes/global.css
 stylesheets[all][]        = includes/local.css
 stylesheets[print][]      = includes/print.css
+; Block base theme styles
+stylesheets[all][]        = zen.css
+stylesheets[all][]        = zen/ie.css
+stylesheets[all][]        = zen/print.css
+stylesheets[all][]        = modules/system/defaults.css
+stylesheets[all][]        = modules/node/node.css
+stylesheets[all][]        = modules/system/system.css
+stylesheets[all][]        = modules/system/system-menus.css
+stylesheets[all][]        = modules/user/user.css
 
 ; Example of adding handheld stylesheets. The iPhone's preferred media type
 ; is based on the CSS3 Media queries. http://www.w3.org/TR/css3-mediaqueries/
