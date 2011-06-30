@@ -79,7 +79,6 @@ stylesheets-conditional[if IE][all][] = includes/ie.css
 ; Optionally add some JavaScripts to your theme.
 
 ;scripts[] = js/script.js
-; Web Template
 
 
 
@@ -105,6 +104,8 @@ regions[footer]         = Footer
 regions[bottom]         = Page bottom
 regions[page_top]       = Page top
 regions[page_bottom]    = Page bottom
+;Web Template
+regions[promobox]       = Promobox
 
 
 
@@ -115,12 +116,12 @@ regions[page_bottom]    = Page bottom
 ; entry for it below. See the Drupal 7 Theme Guide for more info:
 ; http://drupal.org/node/171205#features
 
-features[] = logo
+;features[] = logo
 features[] = name
-features[] = slogan
+;features[] = slogan
 features[] = node_user_picture
 features[] = comment_user_picture
-features[] = favicon
+;features[] = favicon
 features[] = main_menu
 features[] = secondary_menu
 
@@ -128,7 +129,7 @@ features[] = secondary_menu
 
 ; Set the default values of settings on the theme-settings.php form.
 
-settings[zen_breadcrumb]           = yes
+settings[zen_breadcrumb]           = no
 settings[zen_breadcrumb_separator] = ' › '
 settings[zen_breadcrumb_home]      = 1
 settings[zen_breadcrumb_trailing]  = 1
