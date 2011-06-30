@@ -82,9 +82,9 @@ http://www.sfsu.edu/template and to meet California Government Code 11135, imple
   <meta name="viewport" content="width=900" />
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-  <?php if ($site_name): ?>        
-  <?php print $site_name; ?>
-  <?php endif; ?>
+  <?php # if ($site_name): ?>        
+  <?php # print $site_name; ?>
+  <?php # endif; ?>
   <?php print $styles; ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
@@ -93,6 +93,9 @@ http://www.sfsu.edu/template and to meet California Government Code 11135, imple
   </div>
   <?php print $page_top; ?>
   <?php print $page; ?>
+  <!-- javascript -->
+  <script type="text/javascript" src="<?php print base_path() . path_to_theme() ?>/includes/global.js"></script>
+  <?php print $scripts; ?>
   <?php print $page_bottom; ?>
 </body>
 </html>

@@ -71,16 +71,16 @@
 
   <div id="page"><div id="page-inner">
   
-<?php if ($page[headerstripe]): ?>        
-<?php print render ($page[headerstripe]); ?>
+<?php if ($page['headerstripe']): ?>        
+<?php print render($page['headerstripe']); ?>
 <?php endif; ?>
 
-<?php if ($page[sitestripe]): ?>        
-<?php print render ($page[sitestripe]); ?>
+<?php if ($page['sitestripe']): ?>        
+<?php print render($page['sitestripe']); ?>
 <?php endif; ?><!-- x site -->
 
-<?php if ($page[imagestripe]): ?>        
-<?php print render ($page[imagestripe]); ?>
+<?php if ($page['imagestripe']): ?>        
+<?php print render($page['imagestripe']); ?>
 <?php endif; ?><!-- x image -->
 
 <!-- o content --><div id="contentstripe"><div id="contentbox">
@@ -93,8 +93,8 @@
 </div> <!-- /#content-left -->
 <?php #endif; ?>
 
-          <?php if ($page[nav]): ?>
-            <?php print render ($page[nav]); ?>
+          <?php if ($page['nav']): ?>
+            <?php print render($page['nav']); ?>
           <?php endif; ?>
 
           <?php #if ($primary_links): ?>
@@ -125,8 +125,8 @@
 <!-- o sidebar -->
 <div id="sidebar">
 
-<?php if ($page[sidebar]): ?>
-<?php print render ($page[sidebar]); ?>
+<?php if ($page['sidebar']): ?>
+<?php print render($page['sidebar']); ?>
 <?php endif; ?>
 
 <?php #if ($secondary_links): ?>
@@ -155,10 +155,10 @@
 <?php if ($title): ?>
   <h1 class="title"><?php print $title; ?></h1>
 <?php endif; ?>
-<?php if ($tabs): ?>
-  <div class="tabs"><?php print $tabs; ?></div>
+<?php if ($tabs = render($tabs)): ?>
+        <div class="tabs"><?php print $tabs; ?></div>
 <?php endif; ?>
-<?php print $help; ?>
+<?php print render($page['help']); ?>
 <?php if ($messages): ?>
   <div class="messages"><?php print $messages; ?></div>
 <?php endif; ?>
@@ -168,27 +168,23 @@
 
 <?php if ($page['page_top']): ?>
 <div id="page-top">        
-<?php print render ($page['page_top']); ?>
+<?php print render($page['page_top']); ?>
 </div> <!-- /#content-top -->
 <?php endif; ?>
 
 <div id="content-area">
-<?php print render ($page['content']); ?>
+<?php print render($page['content']); ?>
 </div> <!-- /#content-area -->
 
 <?php if ($page['page_bottom']): ?>
 <div id="content-bottom">
-<?php print render ($page['page_bottom']); ?>
+<?php print render($page['page_bottom']); ?>
 </div> <!-- /#content-bottom -->
 <?php endif; ?>
 
 <?php #if ($closure_region): ?>
     <div id="closure-blocks" class="region region-closure"><?php #print $closure_region; ?></div>
   <?php #endif; ?></div>
-
-<!-- javascript -->
-<script type="text/javascript" src="<?php print base_path() . path_to_theme() ?>/includes/global.js"></script>
-<?php print $scripts; ?>
 
 </div></div><!-- x main -->
 
@@ -197,12 +193,12 @@
 <!-- x content -->
 
 <!-- o footer -->
-<?php if ($footerstripe): ?>        
-<?php print $footerstripe; ?>
+<?php if ($page['footerstripe']): ?>        
+<?php print render($page['footerstripe']); ?>
 <?php endif; ?>
 
 <div class="clearfloat"></div>
 
   <!--</div></div>-->
-<div id="footer"><?php print $footer; ?>
-        <?php if (!empty($footer)): print $footer; endif; ?></div>
+<div id="footer"><?php print render($page['footer']); ?>
+        <?php if (!empty($page['footer'])): print render($page['footer']); endif; ?></div>
