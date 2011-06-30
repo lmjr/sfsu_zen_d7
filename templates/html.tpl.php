@@ -63,11 +63,29 @@
   "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>>
 
+<!-- *****************************************************
+Template Version 1.05 - 05/06/09
+
+SF State Web Template Read Me
+
+Use of this template constitutes an agreement to follow the SF State Web Template Guidelines at
+http://www.sfsu.edu/template and to meet California Government Code 11135, implementing Section 508 legislation at http://www.sfsu.edu/~dprc/access/  before publishing pages to the Web.
+
+1. Template overview: http://www.sfsu.edu/template/
+2. Accessibility Review: http://www.sfsu.edu/access/webaccess/
+***************************************************** -->
+
 <head profile="<?php print $grddl_profile; ?>">
+	
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="googlebot" content="nosnippet,noodp,noarchive,noimageindex" />
+  <meta name="viewport" content="width=900" />
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
+  <?php if ($site_name): ?>        
+  <?php print $site_name; ?>
+  <?php endif; ?>
   <?php print $styles; ?>
-  <?php print $scripts; ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
