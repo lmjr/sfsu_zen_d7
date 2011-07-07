@@ -12,7 +12,7 @@
 ; page at admin/appearance.
 
 screenshot  = screenshot.png
-name        = Zen Sub-theme Starter Kit
+name        = SF State Web Template: A D7 Zen sub-theme
 description = Read the <a href="http://drupal.org/node/873778">online docs</a> or the included README.txt on how to create a theme with Zen.
 
 
@@ -33,6 +33,11 @@ base theme  = zen
 ; useful feature. See the excellent Drupal 7 Theme Guide at
 ; http://drupal.org/node/263967 for more details.
 
+; Web Template
+stylesheets[all][]        = includes/global.css
+stylesheets[all][]        = includes/local.css
+stylesheets[print][]      = includes/print.css
+
 stylesheets[all][]        = css/html-reset.css
 stylesheets[all][]        = css/page-backgrounds.css
 stylesheets[all][]        = css/tabs.css
@@ -45,10 +50,6 @@ stylesheets[all][]        = css/comments.css
 stylesheets[all][]        = css/forms.css
 stylesheets[all][]        = css/fields.css
 stylesheets[print][]      = css/print.css
-; Web Template
-stylesheets[all][]        = includes/global.css
-stylesheets[all][]        = includes/local.css
-stylesheets[print][]      = includes/print.css
 ; Block base theme styles
 stylesheets[all][]        = zen.css
 stylesheets[all][]        = zen/ie.css
@@ -56,7 +57,7 @@ stylesheets[all][]        = zen/print.css
 stylesheets[all][]        = modules/system/defaults.css
 stylesheets[all][]        = modules/node/node.css
 stylesheets[all][]        = modules/system/system.css
-stylesheets[all][]        = modules/system/system-menus.css
+stylesheets[all][]        = modules/system/system.menus.css
 stylesheets[all][]        = modules/user/user.css
 
 ; Example of adding handheld stylesheets. The iPhone's preferred media type

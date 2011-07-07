@@ -186,6 +186,10 @@
     <div id="closure-blocks" class="region region-closure"><?php #print $closure_region; ?></div>
   <?php #endif; ?></div>
 
+  <!-- javascript -->
+  <script type="text/javascript" src="<?php print base_path() . path_to_theme() ?>/includes/global.js"></script>
+  <?php print $scripts; ?>
+
 </div></div><!-- x main -->
 
 <div class="clearfloat"></div>

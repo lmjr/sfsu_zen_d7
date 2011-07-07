@@ -93,9 +93,6 @@ http://www.sfsu.edu/template and to meet California Government Code 11135, imple
   </div>
   <?php print $page_top; ?>
   <?php print $page; ?>
-  <!-- javascript -->
-  <script type="text/javascript" src="<?php print base_path() . path_to_theme() ?>/includes/global.js"></script>
-  <?php print $scripts; ?>
   <?php print $page_bottom; ?>
 </body>
 </html>
