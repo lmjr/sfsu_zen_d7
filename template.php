@@ -58,6 +58,24 @@
  *   and http://drupal.org/node/190815#template-suggestions
  */
 
+/**
+ * Duplicate of theme_menu_local_tasks() but adds clearfix to tabs.
+ */
+function sfsu_zen_d7_menu_local_tasks(&$variables) {
+  $output = '';
+
+  if ($primary = drupal_render($variables['primary'])) {
+    $output .= '<h2 class="element-invisible">' . t('Primary tabs') . '</h2>';
+    $output .= '<ul class="tabs primary">' . $primary . '</ul>';
+  }
+  if ($secondary = drupal_render($variables['secondary'])) {
+    $output .= '<h2 class="element-invisible">' . t('Secondary tabs') . '</h2>';
+    $output .= '<ul class="tabs secondaryw">' . $secondary . '</ul>';
+  }
+
+  return $output;
+}
+
 
 /**
  * Override or insert variables into the html templates.
@@ -120,6 +138,7 @@ function sfsu_zen_d7_preprocess_node(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("comment" in this case.)
  */
+
 /* -- Delete this line if you want to use this function
 function sfsu_zen_d7_preprocess_comment(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');

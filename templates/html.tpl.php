@@ -59,8 +59,7 @@
  * @see zen_preprocess_html()
  * @see template_process()
  */
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
-  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>>
 
 <!-- *****************************************************
@@ -75,24 +74,19 @@ http://www.sfsu.edu/template and to meet California Government Code 11135, imple
 2. Accessibility Review: http://www.sfsu.edu/access/webaccess/
 ***************************************************** -->
 
-<head profile="<?php print $grddl_profile; ?>">
+<head>
 	
   <meta name="robots" content="noindex,nofollow" />
   <meta name="googlebot" content="nosnippet,noodp,noarchive,noimageindex" />
   <meta name="viewport" content="width=900" />
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-  <?php # if ($site_name): ?>        
-  <?php # print $site_name; ?>
-  <?php # endif; ?>
   <?php print $styles; ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
-  <div id="skip-link">
-    <a href="#<?php print $jump_link_target; ?>" class="element-invisible element-focusable"><?php print t('Jump to Navigation'); ?></a>
-  </div>
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+  <?php print $scripts; ?>
 </body>
 </html>

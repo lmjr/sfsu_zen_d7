@@ -33,11 +33,6 @@ base theme  = zen
 ; useful feature. See the excellent Drupal 7 Theme Guide at
 ; http://drupal.org/node/263967 for more details.
 
-; Web Template
-stylesheets[all][]        = includes/global.css
-stylesheets[all][]        = includes/local.css
-stylesheets[print][]      = includes/print.css
-
 stylesheets[all][]        = css/html-reset.css
 stylesheets[all][]        = css/page-backgrounds.css
 stylesheets[all][]        = css/tabs.css
@@ -50,6 +45,10 @@ stylesheets[all][]        = css/comments.css
 stylesheets[all][]        = css/forms.css
 stylesheets[all][]        = css/fields.css
 stylesheets[print][]      = css/print.css
+; Add Web Template styles
+stylesheets[all][]        = includes/global.css
+stylesheets[all][]        = includes/local.css
+stylesheets[print][]      = includes/print.css
 ; Block base theme styles
 stylesheets[all][]        = zen.css
 stylesheets[all][]        = zen/ie.css
@@ -59,6 +58,10 @@ stylesheets[all][]        = modules/node/node.css
 stylesheets[all][]        = modules/system/system.css
 stylesheets[all][]        = modules/system/system.menus.css
 stylesheets[all][]        = modules/user/user.css
+stylesheets[all][]        = modules/field/theme/field.css
+stylesheets[all][]        = modules/system/system.theme.css
+stylesheets[all][]        = modules/system/system.messages.css
+stylesheets[all][]        = modules/system/system.base.css
 
 ; Example of adding handheld stylesheets. The iPhone's preferred media type
 ; is based on the CSS3 Media queries. http://www.w3.org/TR/css3-mediaqueries/
@@ -80,6 +83,7 @@ stylesheets-conditional[if IE][all][] = includes/ie.css
 ; Optionally add some JavaScripts to your theme.
 
 ;scripts[] = js/script.js
+scripts[] = includes/global.js
 
 
 

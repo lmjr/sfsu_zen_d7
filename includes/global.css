@@ -40,7 +40,7 @@ img						{border:0;}
 
 /* - - - - - - - image - - - - - - - */
 
-#imagestripe			{width:100%; background:#333333 url(images/imagebox.jpg) repeat-x 50% 0;}
+#imagestripe			{width:100%; background:#333333 url(../images/imagebox.jpg) repeat-x 50% 0;}
 
 #imagebox				{width:98%; max-width:900px; height:60px; margin:auto; padding:0; background:#333333 url(../images/imagebox.jpg) repeat-x 50% 0;}
 

@@ -22,7 +22,6 @@ html					    {}
 
 /* - - - - - - - drupal - - - - - - - */
 
-
 div.item-list ul.pager li {display:inline;background-image:none!important;}
 div.item-list ul.pager li.pager-current {font-weight:bold;}
 div.item-list ul.pager li.pager-item {}
