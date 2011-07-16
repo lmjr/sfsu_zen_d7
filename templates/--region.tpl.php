@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Zen theme's implementation to display a sidebar region.
+ * Zen theme's implementation to display a region.
  *
  * Available variables:
  * - $content: The content for this region, typically blocks.
@@ -27,7 +27,7 @@
  */
 ?>
 <?php if ($content): ?>
-  <!--<div class="<?php #print $classes; ?>"><div class="section">-->
+  <div class="<?php print $classes; ?>">
     <?php print $content; ?>
-  <!--</div></div>--><!-- /.section, /.region -->
+  </div><!-- /.region -->
 <?php endif; ?>
