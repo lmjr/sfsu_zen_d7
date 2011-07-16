@@ -59,7 +59,7 @@ stylesheets[all][]        = modules/system/system.css
 stylesheets[all][]        = modules/system/system.menus.css
 stylesheets[all][]        = modules/user/user.css
 stylesheets[all][]        = modules/field/theme/field.css
-;stylesheets[all][]        = modules/system/system.theme.css
+stylesheets[all][]        = modules/system/system.theme.css
 stylesheets[all][]        = modules/system/system.messages.css
 ;stylesheets[all][]        = modules/system/system.base.css
 
