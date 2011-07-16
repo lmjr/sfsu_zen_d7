@@ -69,7 +69,7 @@
 */
 ?>
 
-<div id="page"><div id="page-inner">
+<!--<div id="page"><div id="page-inner">-->
 <?php if ($page['headerstripe']): ?>
 <?php print render($page['headerstripe']); ?>
 <?php endif; ?>
@@ -87,19 +87,19 @@
 <div id="nav">
 
 <?php #if ($left): ?>
-<div id="content-left">
+<!--<div id="content-left">-->
 <?php #print $left; ?>
-</div> <!-- /#content-left -->
+<!--</div>--> <!-- /#content-left -->
 <?php #endif; ?>
 
-          <?php if ($page['nav']): ?>
+<?php if ($page['nav']): ?>
 <?php print render($page['nav']); ?>
 <?php endif; ?>
 
 <?php #if ($primary_links): ?>
-            <div id="primary" class="clear-block">
+            <!--<div id="primary" class="clear-block">-->
               <?php #print theme('links', $primary_links); ?>
-            </div> <!-- /primary -->
+            <!--</div>--> <!-- /primary -->
           <?php #endif; ?>
 
 <?php #if ($navbar): ?>
@@ -107,15 +107,15 @@
 <?php #endif; ?>
 
 <?php #if ($navbar): ?>
-<div id="content-navbar">
+<!--<div id="content-navbar">-->
 <?php #print $navbar; ?>
-</div> <!-- /#content-navbar -->
+<!--</div>--> <!-- /#content-navbar -->
 <?php #endif; ?>
 
 <?php #if ($left): ?>
-        <div id="sidebar-left"><div id="sidebar-left-inner" class="region region-left">
+        <!--<div id="sidebar-left"><div id="sidebar-left-inner" class="region region-left">-->
           <?php #print $left; ?>
-        </div></div> <!-- /#sidebar-left-inner, /#sidebar-left -->
+        <!--</div></div>--> <!-- /#sidebar-left-inner, /#sidebar-left -->
       <?php #endif; ?>
 
 </div>
@@ -129,16 +129,16 @@
 <?php endif; ?>
 
 <?php #if ($secondary_links): ?>
-            <div id="secondary" class="clear-block">
+            <!--<div id="secondary" class="clear-block">-->
               <?php #print theme('links', $secondary_links); ?>
-            </div> <!-- /#secondary -->
+            <!--</div>--> <!-- /#secondary -->
           <?php #endif; ?>
           
           
             <?php #if ($right): ?>
-        <div id="sidebar-right"><div id="sidebar-right-inner" class="region region-right">
+        <!--<div id="sidebar-right"><div id="sidebar-right-inner" class="region region-right">-->
           <?php #print $right; ?>
-        </div></div> <!-- /#sidebar-right-inner, /#sidebar-right -->
+        <!--</div></div>--> <!-- /#sidebar-right-inner, /#sidebar-right -->
       <?php #endif; ?>
           
 </div>
@@ -166,24 +166,24 @@
 <?php endif; ?>
 
 <?php if ($page['page_top']): ?>
-<div id="page-top">
+<!--<div id="page-top">-->
 <?php print render($page['page_top']); ?>
-</div> <!-- /#content-top -->
+<!--</div>--> <!-- /#content-top -->
 <?php endif; ?>
 
-<div id="content-area">
+<!--<div id="content-area">-->
 <?php print render($page['content']); ?>
-</div> <!-- /#content-area -->
+<!--</div>--> <!-- /#content-area -->
 
 <?php if ($page['page_bottom']): ?>
-<div id="content-bottom">
+<!--<div id="content-bottom">-->
 <?php print render($page['page_bottom']); ?>
-</div> <!-- /#content-bottom -->
+<!--</div>--> <!-- /#content-bottom -->
 <?php endif; ?>
 
-<?php #if ($closure_region): ?>
+<!--<?php #if ($closure_region): ?>
     <div id="closure-blocks" class="region region-closure"><?php #print $closure_region; ?></div>
-  <?php #endif; ?></div>
+  <?php #endif; ?>--></div>
 </div></div><!-- x main -->
 
 <div class="clearfloat"></div>
@@ -198,5 +198,5 @@
 <div class="clearfloat"></div>
 
 <!--</div></div>-->
-<div id="footer"><?php print render($page['footer']); ?>
-<?php if (!empty($page['footer'])): print render($page['footer']); endif; ?></div>
+<!--<div id="footer"><?php #print render($page['footer']); ?>
+<?php #if (!empty($page['footer'])): print render($page['footer']); endif; ?></div>-->
