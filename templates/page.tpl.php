@@ -94,24 +94,9 @@
 
 <!-- o sidebar -->
 <div id="sidebar">
-
 <?php if ($page['sidebar']): ?>
 <?php print render($page['sidebar']); ?>
-<?php endif; ?>
-
-<?php #if ($secondary_links): ?>
-            <div id="secondary" class="clear-block">
-              <?php #print theme('links', $secondary_links); ?>
-            </div> <!-- /#secondary -->
-          <?php #endif; ?>
-          
-          
-            <?php #if ($right): ?>
-        <div id="sidebar-right"><div id="sidebar-right-inner" class="region region-right">
-          <?php #print $right; ?>
-        </div></div> <!-- /#sidebar-right-inner, /#sidebar-right -->
-      <?php #endif; ?>
-          
+<?php endif; ?>          
 </div>
 <!-- x sidebar -->
 
