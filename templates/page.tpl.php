@@ -86,39 +86,9 @@
 <!-- o content --><div id="contentstripe"><div id="contentbox">
 <!-- o nav -->
 <div id="nav">
-
-<?php #if ($left): ?>
-<div id="content-left">        
-<?php #print $left; ?>
-</div> <!-- /#content-left -->
-<?php #endif; ?>
-
-          <?php if ($page['nav']): ?>
-            <?php print render($page['nav']); ?>
-          <?php endif; ?>
-
-          <?php #if ($primary_links): ?>
-            <div id="primary" class="clear-block">
-              <?php #print theme('links', $primary_links); ?>
-            </div> <!-- /primary -->
-          <?php #endif; ?>
-
-<?php #if ($navbar): ?>
-          <?php #print $navbar; ?>
-<?php #endif; ?>
-
-<?php #if ($navbar): ?>
-<div id="content-navbar">        
-<?php #print $navbar; ?>
-</div> <!-- /#content-navbar -->
-<?php #endif; ?>
-
-<?php #if ($left): ?>
-        <div id="sidebar-left"><div id="sidebar-left-inner" class="region region-left">
-          <?php #print $left; ?>
-        </div></div> <!-- /#sidebar-left-inner, /#sidebar-left -->
-      <?php #endif; ?>
-
+<?php if ($page['nav']): ?>
+<?php print render($page['nav']); ?>
+<?php endif; ?>
 </div>
 <!-- x nav -->
 
