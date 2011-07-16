@@ -105,11 +105,11 @@
 
 <?php if (/*$breadcrumb or */$title or $tabs or $help or $messages): ?>
 
-<div id="content-header">
-<?php #print $breadcrumb; ?>
 <?php if ($title): ?>
   <h1 class="title"><?php print $title; ?></h1>
 <?php endif; ?>
+
+<div id="content-header">
 <?php if ($tabs = render($tabs)): ?>
         <div class="tabs"><?php print $tabs; ?></div>
 <?php endif; ?>
@@ -127,9 +127,8 @@
 </div> <!-- /#content-top -->
 <?php endif; ?>
 
-<div id="content-area">
 <?php print render($page['content']); ?>
-</div> <!-- /#content-area -->
+<!-- /#content-area -->
 
 <?php if ($page['page_bottom']): ?>
 <div id="content-bottom">
@@ -137,9 +136,6 @@
 </div> <!-- /#content-bottom -->
 <?php endif; ?>
 
-<?php #if ($closure_region): ?>
-    <div id="closure-blocks" class="region region-closure"><?php #print $closure_region; ?></div>
-  <?php #endif; ?></div>
 </div></div><!-- x main -->
 
 <div class="clearfloat"></div>
